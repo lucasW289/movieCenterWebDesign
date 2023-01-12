@@ -18,10 +18,10 @@
         </a>
         <!-- menu open -->
         <ul class="navbar">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">Coming</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#trending">Movies</a></li>
+            <li><a href="#coming">Coming</a></li>
+            <li><a href="#contact">contact</a></li>
         </ul>
         <a href="#" class="btn">Sign In</a>
         <!-- menu closse -->
@@ -29,7 +29,7 @@
     <!-- nav bar close -->
 
     <!-- cover section-->
-    <div class="home">
+    <div class="home" id="home">
         <div class="cover">
             <img src="image/cover.jpeg">
             <div class="text">
@@ -45,7 +45,7 @@
         <!-- cover section end -->
     </div>
         <!-- Trending movie showroom -->
-        <div class="movieShowroom">
+        <div class="movieShowroom" id="trending">
             <h1>Trending Now</h1>
             <div class="movieGridContainer">
                 <div class="idvGrid">
@@ -109,7 +109,7 @@
         <!-- Trending movie showroom ends -->
         
         <!-- coming soon movie showroom starts -->
-        <div class="movieShowroom">
+        <div class="movieShowroom" id="coming">
             <h1>coming soon</h1>
             <div class="movieGridContainer">
                 <div class="idvGrid">
@@ -172,13 +172,35 @@
         </div>
         <!-- Comming soon movie showroom ends -->
         <!-- contact form starts -->
-        <div class="contactForm">
+        <div class="contactForm" id="contact">
             <h2>Contact Us</h2>
             <form action="#">
                 <input type="email" class="email" placeholder="Enter your email" required>
                 <input type="button" value="Send" class="btn">
             </form>
         </div>
+
+        <div class="social">
+            <a href="" class="logo">
+                <i class='bx bxl-instagram-alt'></i>
+            </a>
+            <a href="" class="logo">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href="" class="logo">
+                <i class='bx bxl-discord-alt' ></i>
+            </a>
+
+        </div>
         <!-- contact form ends -->
+
+        <!-- Footer Start -->
+        <footer>
+            <a href="" class="logo">
+                <i class='bx bxs-movie'></i> MOVIE 
+            </a>
+            <p>Developed by LUCAS</p>
+        </footer>
+        <!-- footer ends -->
     </body>
 </html>
