@@ -204,8 +204,8 @@ header{
 }
 .contactForm
 {
-    max-width: 320px;
-    background-color: rgb(227, 240, 225);
+    max-width: 380px;
+    /* background-color: rgb(227, 240, 225); */
     display: flex;
     margin: 0 auto;
     flex-direction: column;
@@ -223,21 +223,21 @@ header{
 .contactForm h2{
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--bg-color);
+    color: var(--text-color);
     margin-top: -1rem;
     margin-bottom: 0.4rem;
 }
 .contactForm form{
     padding: 0px auto;
-    padding-top: -4rem;
+    /* padding-top: -4rem; */
     margin: 0;
+    padding: 12px 2px;
+    border-radius: 12px;;
     background-color: rgb(227, 240, 225);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
 }
 .contactForm form input{
     padding: 0%;
@@ -274,16 +274,84 @@ header{
 footer
 {
     width: 100%;
-    height: 23px;
-
+    height: 2rem;
     background-color: rgb(45, 39, 43);
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 0.8rem;
     color: rgba(255, 255, 255, 0.46);
     font-weight: 500;
 }
-.footer a, p
+footer a .bx
 {
-    padding: 66rem auto;
+    color: var(--main-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1080px)
+{
+    .home .cover .text {
+        padding: 4% 10%;
+    }
+    .home .cover .text h1 {
+        font-size: 2.3rem;
+    }
+    .home .cover .text p {
+        font-size: 1.6rem;
+
+    }
+    .btn 
+    {
+        padding: 0.4rem 0.7rem;
+    }
+}
+@media (max-width: 810px)
+{
+    .home .cover .text h1 {
+        font-size: 1.7rem;
+    }
+    .home .cover .text p {
+        font-size: 1.5rem;
+
+    }
+    header
+    {
+        padding: 6px 4%;
+        
+    }
+    .navbar 
+    {
+        display: none;
+    }
+    header .logo{
+      
+    }
+}
+@media (max-width: 500px)
+{
+    .contactForm{
+        max-width: 290px;
+    }
+    .movieShowroom h1 {
+        font-size: 1.3rem;
+    }
+    .cover
+    {
+        min-height: 550px;
+    }
+    .movieGridContainer
+    {
+        grid-template-columns: repeat(auto-fit, minmax(170px, auto));
+    }
+}
+@media (max-width: 300px)
+{
+    .contactForm{
+        max-width: 240px;
+    }
+    .movieGridContainer
+    {
+        grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    }
 }
