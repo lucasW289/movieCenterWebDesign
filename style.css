@@ -23,7 +23,7 @@
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
-    height: 2000px;
+    /* height: 2000px; */
 }
 
 header{
@@ -324,9 +324,7 @@ footer a .bx
     {
         display: none;
     }
-    header .logo{
-      
-    }
+   
 }
 @media (max-width: 500px)
 {
@@ -350,8 +348,5 @@ footer a .bx
     .contactForm{
         max-width: 240px;
     }
-    .movieGridContainer
-    {
-        grid-template-columns: repeat(auto-fit, minmax(160px, auto));
-    }
+    
 }
